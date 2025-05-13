@@ -31,13 +31,13 @@ body {
 
 
 .hero-title {
-    font-size: 3rem;
+    font-size: 5rem;
 }
 
 
 
 .minimal-header {
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 
@@ -58,4 +58,13 @@ body {
 
 .text-left {
     text-align: left;
+}
+
+
+
+.navigation-bar span {
+    text-decoration: underline;
+    cursor: pointer;
+    display: inline-block;
+    margin: 3rem;
 }
