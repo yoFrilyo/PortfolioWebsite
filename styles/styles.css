@@ -38,7 +38,7 @@ body {
 
 
 .minimal-header {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 
@@ -46,7 +46,6 @@ body {
 .name {
     font-size: 5rem;
     font-weight: bold;
-    margin: 3rem;
     color: #EAD279;
 }
 
