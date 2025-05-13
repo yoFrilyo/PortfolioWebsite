@@ -25,7 +25,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 3rem;
 }
 
 
@@ -33,6 +32,7 @@ body {
 .hero-title {
     font-size: 5rem;
     font-weight: bold;
+    margin: 3rem;
 }
 
 
@@ -40,6 +40,7 @@ body {
 .name {
     font-size: 4rem;
     font-weight: bold;
+    margin: 3rem;
     color: #EAD279;
 }
 
@@ -68,6 +69,7 @@ body {
 .navigation-bar span {
     cursor: pointer;
     display: inline-block;
+    margin: 3rem;
     font-size: 2rem;
     color: #EAD279;
 }
