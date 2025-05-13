@@ -25,7 +25,8 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem;
+    margin: 3rem;
+    padding: 3rem;
 }
 
 
@@ -68,7 +69,6 @@ body {
 .navigation-bar span {
     cursor: pointer;
     display: inline-block;
-    margin: 3rem;
     font-size: 2rem;
     color: #EAD279;
 }
