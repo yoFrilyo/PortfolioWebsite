@@ -24,7 +24,7 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
-    background-color: #353541;
+    background-color: #282A41;
     color: white;
 }
 
@@ -32,4 +32,30 @@ body {
 
 .hero-title {
     font-size: 3rem;
+}
+
+
+
+.minimal-header {
+    font-size: 1rem;
+}
+
+
+
+.block-centered {
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+
+
+.text-centered {
+    text-align: center;
+}
+
+
+
+.text-left {
+    text-align: left;
 }
