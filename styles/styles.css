@@ -28,7 +28,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 
@@ -40,9 +40,9 @@ body {
 
 
 
-.minimal-header {
+/* .minimal-header {
     font-size: 3rem;
-}
+} */
 
 
 
