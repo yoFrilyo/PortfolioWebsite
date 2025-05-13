@@ -1,0 +1,29 @@
+/* 
+style.css
+Frilyo
+*/
+
+
+
+@font-face{
+    font-family: 'Abel';
+    src: url('font/Abel-Regular.ttf') format("ttf");
+}
+
+body {
+    font-family: 'Abel', regular;
+}
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+
+
+
+.hero-title {
+    font-size: "3rem";
+}
