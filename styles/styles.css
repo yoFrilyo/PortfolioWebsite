@@ -7,11 +7,11 @@ Frilyo
 
 @font-face{
     font-family: 'Abel';
-    src: url('font/Abel-Regular.ttf') format("ttf");
+    src: url('fonts/Abel-Regular.ttf') format("truetype");
 }
 
 body {
-    font-family: 'Abel', regular;
+    font-family: 'Abel', sans-serif;
 }
 
 
