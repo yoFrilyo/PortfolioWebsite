@@ -37,6 +37,12 @@ body {
 
 
 
+.minimal-header {
+    font-size: 4rem;
+}
+
+
+
 .name {
     font-size: 5rem;
     font-weight: bold;
