@@ -25,20 +25,20 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 3rem;
 }
 
 
 
 .hero-title {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
-    margin: 3rem;
 }
 
 
 
 .name {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
     margin: 3rem;
     color: #EAD279;
