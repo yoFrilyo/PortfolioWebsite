@@ -16,6 +16,8 @@ body {
     font-family: 'Abel', sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #282A41;
+    color: white;
 }
 
 
@@ -24,8 +26,6 @@ body {
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
-    background-color: #282A41;
-    color: white;
 }
 
 
@@ -63,8 +63,17 @@ body {
 
 
 .navigation-bar span {
-    text-decoration: underline;
     cursor: pointer;
     display: inline-block;
     margin: 3rem;
+    font-size: 2rem;
+    color: #EAD279;
+}
+
+.navigation-bar input[type="radio"] {
+    display: none;
+}
+
+.navigation-bar input[type="radio"]:checked + span {
+    text-decoration: underline;
 }
