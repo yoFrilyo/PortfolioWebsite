@@ -20,34 +20,48 @@ Frilyo
 body {
     font-family: 'Abel', sans-serif;
     background-color: #282A41;
-    color: white;
+    color: #FEF9E7;
 }
+
+
+.home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5rem;
+    padding-top: 10rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
 
 
 .about {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 2rem;
+    flex-direction: row;
+    justify-content: top;
+    gap: 25rem;
+    min-height: calc(100vh - 34rem);
 }
 
 
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: bold;
+    padding: 5rem;
 }
 
 
 
-/* .minimal-header {
+.description {
     font-size: 3rem;
-} */
+}
 
 
 
 .name {
-    font-size: 5rem;
+    font-size: 7rem;
     font-weight: bold;
     color: #EAD279;
 }
@@ -74,19 +88,46 @@ body {
 
 
 
-.navigation-bar span {
-    cursor: pointer;
-    display: inline-block;
-    margin: 3rem;
-    font-size: 2rem;
-    color: #EAD279;
+.spacer {
+    max-height: 100vh;
 }
 
-.navigation-bar input[type="radio"] {
+
+
+.navigation-bar {
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    padding-top: 2rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    padding-bottom: 2rem;
+    background-color: #282A41;
+}
+
+
+
+.navigation-form span {
+    display: inline;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #EAD279;
+    margin-right: 10rem;
+}
+
+.navigation-form input[type="radio"] {
     display: none;
 }
 
-.navigation-bar input[type="radio"]:checked + span {
+.navigation-form input[type="radio"]:checked + span {
     text-decoration: underline;
     font-weight: bold;
+}
+
+
+
+.empty-content {
+    height: 2000px;
+    background: #FEF9E7;
 }

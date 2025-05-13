@@ -12,31 +12,36 @@ Frilyo
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
-        <section class="about">
+        <section class="home">
             <div class="home-head-bar">
-                <h2 class="hero-title text-centered">Welcome!</h2>
+                <p class="description">Hi, I'm</p>
+                <h1 class="name">Owen Gallegos</h1>
             </div>
-            <div class="column block-left">
-                <p class="minimal-header text-left">Hi, I'm</p>
-                <h1 class="name text-left">Owen Gallegos</h1>
-                <img class="headshot" src="TODO">
-            </div>
-            <div class="column right">
-                <p class="description" id="bio"></p>
+            <div class="about">
+                <div class="column">
+                    <img class="headshot" src="TODO">
+                </div>
+                <div class="column">
+                    <p class="description" id="bio">About section</p>
+                </div>
             </div>
         </section>
-        <section class="navigation-bar stick-to-top">
-            <form id="navigation-selector">
-                <label><input type="radio" name="tab-selector" value="about" checked><span>About</span></label>
-                <label><input type="radio" name="tab-selector" value="Portfolio"><span>Projects</span></label>
-                <label><input type="radio" name="tab-selector" value="Resume"><span>Resume</span></label>
-                <label><input type="radio" name="tab-selector" value="Contact"><span>Contact</span></label>
-            </form>
+        <div class="spacer"></div>
+        <section class="navigation-bar">
+            <div class="navigation-form">
+                <form id="navigation-selector">
+                    <label><input type="radio" name="tab-selector" value="about" checked><span>About</span></label>
+                    <label><input type="radio" name="tab-selector" value="Portfolio"><span>Projects</span></label>
+                    <label><input type="radio" name="tab-selector" value="Resume"><span>Resume</span></label>
+                    <label><input type="radio" name="tab-selector" value="Contact"><span>Contact</span></label>
+                </form>
+            </div>
+            
             <div class="links">
                 <!-- TODO -->
             </div>
         </section>
-        <section class="portfolio">
+        <section class="portfolio empty-content">
             <div class="project-list" id="project-list"></div>
         </section>
         <section class="footer">
