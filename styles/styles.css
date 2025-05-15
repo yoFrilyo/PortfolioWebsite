@@ -18,9 +18,19 @@ Frilyo
 }
 
 body {
+    padding-top: 10rem;
+    padding-left: 15rem;
+    padding-right: 15rem;
     font-family: 'Abel', sans-serif;
     background-color: #282A41;
-    color: #FEF9E7;
+    /* color: #FEF9E7; */
+    color: white;
+}
+
+
+
+.spacer-1rem {
+    height: 1rem;
 }
 
 
@@ -29,9 +39,6 @@ body {
     flex-direction: column;
     justify-content: center;
     gap: 5rem;
-    padding-top: 10rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
 }
 
 
@@ -41,7 +48,7 @@ body {
     flex-direction: row;
     justify-content: top;
     gap: 25rem;
-    min-height: calc(100vh - 34rem);
+    min-height: calc(100vh - 32rem);
 }
 
 
@@ -99,10 +106,7 @@ body {
     top: 0;
     bottom: 0;
     z-index: 10;
-    padding-top: 2rem;
-    padding-left: 15rem;
-    padding-right: 15rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
     background-color: #282A41;
 }
 
@@ -112,8 +116,8 @@ body {
     display: inline;
     cursor: pointer;
     font-size: 2rem;
-    color: #EAD279;
     margin-right: 10rem;
+    color: #EAD279;
 }
 
 .navigation-form input[type="radio"] {
@@ -125,9 +129,15 @@ body {
     font-weight: bold;
 }
 
+.rounded-line {
+    height: 4px;
+    border-radius: 2px;
+    background-color: #EAD279;
+}
+
 
 
 .empty-content {
     height: 2000px;
-    background: #FEF9E7;
+    /* background: #FEF9E7; */
 }
