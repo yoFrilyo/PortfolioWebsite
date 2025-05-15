@@ -5,6 +5,7 @@ Frilyo
 
 
 
+
 @font-face{
     font-family: 'Abel';
     src: url('../fonts/Abel-Regular.ttf') format("truetype");
@@ -23,7 +24,21 @@ body {
     padding-right: 15rem;
     font-family: 'Abel', sans-serif;
     background-color: #282A41;
-    /* color: #FEF9E7; */
+    color: white;
+}
+
+a {
+    all: inherit;
+}
+
+
+
+.hoverable {
+    cursor: pointer;
+}
+
+.hoverable:hover {
+    /* //cursor: pointer;  */
     color: white;
 }
 
@@ -48,7 +63,7 @@ body {
     flex-direction: row;
     justify-content: top;
     gap: 25rem;
-    min-height: calc(100vh - 32rem);
+    min-height: calc(100vh - 32rem - 2px);
 }
 
 
@@ -104,20 +119,27 @@ body {
 .navigation-bar {
     position: sticky;
     top: 0;
-    bottom: 0;
+    /* bottom: 0; */
     z-index: 10;
     padding-top: 1rem;
+    font-size: 2rem;
+    color: #EAD279;
     background-color: #282A41;
 }
 
-
+.flex-container-spread-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
 
 .navigation-form span {
-    display: inline;
-    cursor: pointer;
-    font-size: 2rem;
+    display: inline-block;
+}
+
+.spacer-noclick {
     margin-right: 10rem;
-    color: #EAD279;
 }
 
 .navigation-form input[type="radio"] {
@@ -127,6 +149,13 @@ body {
 .navigation-form input[type="radio"]:checked + span {
     text-decoration: underline;
     font-weight: bold;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2rem;
+    
 }
 
 .rounded-line {
@@ -139,5 +168,4 @@ body {
 
 .empty-content {
     height: 2000px;
-    /* background: #FEF9E7; */
 }

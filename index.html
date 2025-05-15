@@ -10,6 +10,7 @@ Frilyo
         <title>Owen Gallegos</title>
         <!--link rel="icon" href="/favicon.ico" type="image/x-icon"-->
         <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
     </head>
     <body>
         <section class="home">
@@ -19,7 +20,7 @@ Frilyo
             </div>
             <div class="about">
                 <div class="column">
-                    <img class="headshot" src="TODO">
+                    <img class="headshot" src="#">
                 </div>
                 <div class="column">
                     <p class="description" id="bio">About section</p>
@@ -27,16 +28,26 @@ Frilyo
             </div>
         </section>
         <section class="navigation-bar">
-            <div class="navigation-form">
-                <form id="navigation-selector">
-                    <label><input type="radio" name="tab-selector" value="about" checked><span>About</span></label>
-                    <label><input type="radio" name="tab-selector" value="Portfolio"><span>Projects</span></label>
-                    <label><input type="radio" name="tab-selector" value="Resume"><span>Resume</span></label>
-                    <label><input type="radio" name="tab-selector" value="Contact"><span>Contact</span></label>
-                </form>
-            </div>
-            <div class="links">
-                <!-- TODO -->
+            <div class="flex-container-spread-row">
+                <div class="navigation-form">
+                    <form id="navigation-selector">
+                        <label class="hoverable spacer-noclick"><input type="radio" name="tab-selector" value="about" checked><span>About</span></label>
+                        <label class="hoverable spacer-noclick"><input type="radio" name="tab-selector" value="Portfolio"><span>Projects</span></label>
+                        <label class="hoverable spacer-noclick"><input type="radio" name="tab-selector" value="Resume"><span>Resume</span></label>
+                        <label class="hoverable"><input type="radio" name="tab-selector" value="Contact"><span>Contact</span></label>
+                    </form>
+                </div>
+                <div class="links">
+                    <a href="https://github.com/yoFrilyo" target="_blank" rel="noopener noreferrer" class="link-icon">
+                        <i class="fab fa-github hoverable"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/owen-gallegos-b89286277" target="_blank" rel="noopener noreferrer" class="link-icon">
+                        <i class="fab fa-linkedin hoverable"></i>
+                    </a>
+                    <a href="https://instagram.com/og_legos" target="_blank" rel="noopener noreferrer" class="link-icon">
+                        <i class="fab fa-instagram hoverable"></i>
+                    </a>
+                </div>
             </div>
             <div class="spacer-1rem"></div>
             <div class="rounded-line"></div>
