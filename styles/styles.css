@@ -23,7 +23,7 @@ body {
     padding-left: 15rem;
     padding-right: 15rem;
     font-family: 'Abel', sans-serif;
-    background-color: #282A41;
+    background-color: #1F2133;
     color: white;
 }
 
@@ -74,10 +74,14 @@ a {
     padding: 5rem;
 }
 
+.hero-helper {
+    font-size: 3rem;
+}
+
 
 
 .description {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 
@@ -124,7 +128,7 @@ a {
     padding-top: 1rem;
     font-size: 2rem;
     color: #EAD279;
-    background-color: #282A41;
+    background-color: #1F2133;
 }
 
 .flex-container-spread-row {
@@ -168,4 +172,24 @@ a {
 
 .empty-content {
     height: 2000px;
+}
+
+
+
+.rounded-image {
+    border-radius: 2rem;
+}
+
+
+
+.headshot-image {
+    width: 48vh;
+    height: 48vh;
+}
+
+
+
+.project-image {
+    width: 300px;
+    height: 250px;
 }
