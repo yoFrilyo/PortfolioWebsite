@@ -190,8 +190,28 @@ a {
 
 
 .project {
+    display: flex;
+    flex-direction: row;
     list-style: none;
-    margin-top: 5rem;
+    margin-top: 20rem;
+}
+
+.project-left {
+    flex: 2;
+}
+
+.project-right {
+    flex: 1;
+    text-align: right;
+}
+
+.project-title {
+    font-size: 4rem;
+    color: #EAD279;
+}
+
+.project-date {
+    font-size: 2rem;
 }
 
 .project-image {

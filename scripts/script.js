@@ -15,10 +15,18 @@ fetch('../content/index-content.json')
         // portfolio
         const container = document.getElementById('project-list');
         data.portfolio.forEach(project => {
-            const item = document.createElement('li');
-            item.className = 'project';
-            item.innerHTML = `<h1>${project.name}</h1><p>${project.desc}</p>`;
-            container.appendChild(item);
+            const outerItem = document.createElement('li');
+            const innerItemLeft = document.createElement('div');
+            const innerItemRight = document.createElement('div');
+            outerItem.className = 'project';
+            innerItemLeft.className = 'project-left';
+            innerItemRight.className = 'project-right';
+            innerItemLeft.innerHTML = `<h1 class="project-title">${project.name}</h1><p class="description">${project.desc}</p>`;
+            innerItemRight.innerHTML = `<p class="project-date">${project.date}</p><img class="project-image rounded-image" src="${project.image}>`;
+            
+            outerItem.appendChild(innerItemLeft);
+            outerItem.appendChild(innerItemRight);
+            container.appendChild(outerItem);
         });
     })
     .catch(err => {

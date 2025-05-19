@@ -5,10 +5,12 @@
         "image": "../Images/HeadshotPlaceholder.jpg"
     },
     "about": {
-        "text": "This is my website showcasing projects I have designed, developed, or contributed to over the years. Whether it's an Android app, a full-stack website, or a set of low-level memory management functions in assembly, each project represents a step in my growth as a developer. I enjoy working on all levels accross the stack, and I'm always exploring new languages, paradigms, and problem solving techniques. From low-level systems to high level designs, I enjoy building solutions from the ground up.\n\nFeel free to explore my work and reach out if you'd like to connect!\n\nThanks for visiting!"
+        "title": "Welcom to my website!",
+        "text": "This website showcases projects I have designed, developed, or contributed to over the years. Whether it's an Android app, a full-stack website, or a set of low-level memory management functions in assembly, each project represents a step in my growth as a developer. I enjoy working on all levels accross the stack, and I'm always exploring new languages, paradigms, and problem solving techniques. From low-level systems to high level designs, I enjoy building solutions from the ground up.\n\nFeel free to explore my work and reach out if you'd like to connect!\n\nThanks for visiting!"
     },
-    "portfolio": [
-        {"name": "Noise Nest", "date": "current", "desc": "A soundboard for linux enabling users to bind custom hotkeys to play sound files through a microphone output. Saves users created configurations using TinyXML and loads them at the application start.", "image": "#"},
-        {"name": "Noise Nest", "date": "current", "desc": "A soundboard for linux enabling users to bind custom hotkeys to play sound files through a microphone output. Saves users created configurations using TinyXML and loads them at the application start.", "image": "#"}
+    "portfolio":  [
+        {"name": "Noise Nest", "date": "Current Project", "desc": "A soundboard for linux enabling users to bind custom hotkeys to play sound files through a microphone output. Saves users created configurations using TinyXML and loads them at the application start.", "image": "#"},
+        {"name": "Library Database (Website)", "date": "April 2025", "desc": "A website to add books to a database. Use the search bar to find books by title or author. Click on books to checkout, delete, or edit their data.", "image": "#"},
+        {"name": "Expense Tracker (Android Application)", "date": "March 2025", "desc": "Log purchases by inputing name, date, cost, and reason. See list of all expenses along with data such as amount spent per day and per month as well as a grand total amount spent.", "image": "#"}
     ]
 }
