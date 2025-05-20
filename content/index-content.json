@@ -6,11 +6,18 @@
     },
     "about": {
         "title": "Welcom to my website!",
-        "text": "This website showcases projects I have designed, developed, or contributed to over the years. Whether it's an Android app, a full-stack website, or a set of low-level memory management functions in assembly, each project represents a step in my growth as a developer. I enjoy working on all levels accross the stack, and I'm always exploring new languages, paradigms, and problem solving techniques. From low-level systems to high level designs, I enjoy building solutions from the ground up.\n\nFeel free to explore my work and reach out if you'd like to connect!\n\nThanks for visiting!"
+        "text": "I desigend this website in VSCode to showcases projects I have designed, developed, or contributed to over the years. Whether it's an Android app, a full-stack website, or a set of low-level memory management functions in assembly, each project represents a step in my growth as a developer. I enjoy working on all levels accross the stack, and I'm always exploring new languages, paradigms, and problem solving techniques. From low-level systems to high level designs, I enjoy building solutions from the ground up.\n\nFeel free to explore my work and reach out if you'd like to connect!\n\nThanks for visiting!"
     },
     "portfolio":  [
-        {"name": "Noise Nest", "date": "Current Project", "desc": "A soundboard for linux enabling users to bind custom hotkeys to play sound files through a microphone output. Saves users created configurations using TinyXML and loads them at the application start.", "image": "#"},
-        {"name": "Library Database (Website)", "date": "April 2025", "desc": "A website to add books to a database. Use the search bar to find books by title or author. Click on books to checkout, delete, or edit their data.", "image": "#"},
-        {"name": "Expense Tracker (Android Application)", "date": "March 2025", "desc": "Log purchases by inputing name, date, cost, and reason. See list of all expenses along with data such as amount spent per day and per month as well as a grand total amount spent.", "image": "#"}
-    ]
+        {"name": "Noise Nest", "date": "Current Project", "image": "#", "link": "https://github.com/yoFrilyo/NoiseNest", "desc": "A soundboard for linux enabling users to bind custom hotkeys to play sound files through a microphone output. Saves users created configurations using TinyXML and loads them at the application start."},
+        {"name": "Library Database (Website)", "date": "April 2025", "image": "#", "link": "https://github.com/yoFrilyo/library-database", "desc": "A website used to track the inventory of a library. Users can add books to a database and use the search bar to find books by title or author. Books listed can be clicked on to checkout, delete, or edit their data."},
+        {"name": "Expense Tracker (Android Application)", "date": "March 2025", "image": "#", "link": "https://github.com/yoFrilyo/AndroidStudio-ExpenseTracker", "desc": "An Android app used to track expenses and maintain a budget. Log purchases by inputing name, date, cost, and reason. See list of all expenses along with data such as amount spent per day and per month as well as a grand total amount spent."},
+        {"name": "oMalloc", "date": "December 2023", "image": "#", "link": "https://github.com/yoFrilyo/MIPS_oMalloc", "desc": "A set of functions to aid in dynamic memory allocation and heap management written in MIPS assembly language. Allows a user to allocate blocks of memory of a custom size as well as free blocks of memory for future use. Freed blocks of memory are used to store a new block if it is large enough to hold the specified amount of data."},
+        {"name": "meTunes", "date": "November 2023", "image": "#", "link": "https://github.com/MexicanCacti/meTunes", "desc": "A program that plays sound files and music. Features also include pausing, playing a playlist, shuffling or sorting a playlist, and changing volume. My role was quality assurance which involved testing the program, debugging, analyzing user interactions with the software, and communicating necessary changes."}
+    ],
+    "footer": {
+        "build": "Built with just HTML, CSS, and JS in VSCode",
+        "version": "1.0.0",
+        "copyright": "© 2025 Owen Gallegos"
+    }
 }

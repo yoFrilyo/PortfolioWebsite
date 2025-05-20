@@ -8,17 +8,20 @@ fetch('../content/index-content.json')
         document.getElementById('hero-helper').innerHTML = data.hero.helper
         document.getElementById('name').innerHTML = data.hero.title;
 
-        //about
+        // about
         const aboutText = data.about.text.replace(/\n/g, '<br>')
         document.getElementById('bio').innerHTML = aboutText;
 
         // portfolio
         const container = document.getElementById('project-list');
         data.portfolio.forEach(project => {
-            const outerItem = document.createElement('li');
+            const outerItem = document.createElement('a');
             const innerItemLeft = document.createElement('div');
             const innerItemRight = document.createElement('div');
-            outerItem.className = 'project';
+            outerItem.href = project.link;
+            outerItem.target= "_blank";
+            outerItem.rel="noopener noreferrer"
+            outerItem.className = 'project hoverable';
             innerItemLeft.className = 'project-left';
             innerItemRight.className = 'project-right';
             innerItemLeft.innerHTML = `<h1 class="project-title">${project.name}</h1><p class="description">${project.desc}</p>`;
@@ -28,6 +31,21 @@ fetch('../content/index-content.json')
             outerItem.appendChild(innerItemRight);
             container.appendChild(outerItem);
         });
+
+        // footer
+        const footerContainer = document.getElementById('footer');
+        const buildText = document.createElement('p');
+        const versionText = document.createElement('p');
+        const copyrightText = document.createElement('p');
+        buildText.className = "footer-text";
+        versionText.className = "footer-text";
+        copyrightText.className = "footer-text";
+        buildText.innerHTML = data.footer.build;
+        versionText.innerHTML = `Version ${data.footer.version}`;
+        copyrightText.innerHTML = data.footer.copyright;
+        footerContainer.appendChild(buildText);
+        footerContainer.appendChild(versionText);
+        footerContainer.appendChild(copyrightText);
     })
     .catch(err => {
         console.error('Error loading JSON:', err);
