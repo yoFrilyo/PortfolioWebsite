@@ -5,6 +5,9 @@ Frilyo
 
 
 
+html {
+    scroll-behavior: smooth;
+}
 
 @font-face{
     font-family: 'Abel';
@@ -19,7 +22,6 @@ Frilyo
 }
 
 body {
-    padding-top: 10rem;
     padding-left: 15rem;
     padding-right: 15rem;
     font-family: 'Abel', sans-serif;
@@ -31,10 +33,21 @@ a {
     all: inherit;
 }
 
+hr {
+    height: 4px;
+    border-radius: 2px;
+    border: none;
+    background-color: #EAD279;
+}
+
 
 
 .hoverable {
     cursor: pointer;
+}
+
+.hoverable:hover {
+    color: white;
 }
 
 .hoverable:hover * {
@@ -53,6 +66,7 @@ a {
     flex-direction: column;
     justify-content: center;
     gap: 5rem;
+    min-height: calc(100vh - 6rem);
 }
 
 
@@ -62,7 +76,6 @@ a {
     flex-direction: row;
     justify-content: top;
     gap: 25rem;
-    min-height: calc(100vh - 32rem - 2px);
 }
 
 
@@ -119,15 +132,44 @@ a {
 
 
 
-.navigation-bar {
+.spacer-vertical-20rem {
+    height: 20rem;
+}
+
+
+
+nav {
     position: sticky;
     top: 0;
-    /* bottom: 0; */
     z-index: 10;
-    padding-top: 1rem;
+
     font-size: 2rem;
     color: #EAD279;
     background-color: #1F2133;
+}
+
+.nav-direct {
+    margin-right: 5.6rem;
+}
+
+.nav-direct.active {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.nav-link {
+    text-align: right;
+    margin-left: 2rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+}
+
+.directs {
+    display: flex;
+    flex-direction: row;
 }
 
 .flex-container-spread-row {
@@ -135,9 +177,11 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
 }
 
-.navigation-form span {
+/* .navigation-form span {
     display: inline-block;
 }
 
@@ -152,25 +196,12 @@ a {
 .navigation-form input[type="radio"]:checked + span {
     text-decoration: underline;
     font-weight: bold;
-}
-
-.links {
-    display: flex;
-    flex-direction: row;
-    margin-left: 2rem;
-    
-}
+} */
 
 .rounded-line {
     height: 4px;
     border-radius: 2px;
     background-color: #EAD279;
-}
-
-
-
-.empty-content {
-    height: 2000px;
 }
 
 
@@ -193,7 +224,7 @@ a {
     flex-direction: row;
     list-style: none;
     
-    margin-top: 20rem;
+    margin-bottom: 20rem;
 }
 
 .project-left {
@@ -222,11 +253,10 @@ a {
 
 
 .footer {
-    margin-top: 20rem;
     text-align: center;
 }
 
 .footer-text {
     margin: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
 }
