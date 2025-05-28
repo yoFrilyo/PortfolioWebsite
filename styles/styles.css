@@ -6,8 +6,7 @@ Frilyo
 
 
 html {
-    scroll-behavior: smooth;
-}
+    scroll-behavior: smooth;}
 
 @font-face{
     font-family: 'Abel';
@@ -56,9 +55,15 @@ hr {
 
 
 
-.spacer-1rem {
-    height: 1rem;
+.rounded-image {
+    border-radius: 2rem;
 }
+
+.headshot-image {
+    width: 48vh;
+    height: 48vh;
+}
+
 
 
 .home {
@@ -126,11 +131,6 @@ hr {
 
 
 
-.spacer {
-    max-height: 100vh;
-}
-
-
 
 .spacer-vertical-20rem {
     height: 20rem;
@@ -181,49 +181,12 @@ nav {
     padding-bottom: 1rem;
 }
 
-/* .navigation-form span {
-    display: inline-block;
-}
-
-.spacer-noclick {
-    margin-right: 10rem;
-}
-
-.navigation-form input[type="radio"] {
-    display: none;
-}
-
-.navigation-form input[type="radio"]:checked + span {
-    text-decoration: underline;
-    font-weight: bold;
-} */
-
-.rounded-line {
-    height: 4px;
-    border-radius: 2px;
-    background-color: #EAD279;
-}
-
-
-
-.rounded-image {
-    border-radius: 2rem;
-}
-
-
-
-.headshot-image {
-    width: 48vh;
-    height: 48vh;
-}
-
 
 
 .project {
     display: flex;
     flex-direction: row;
     list-style: none;
-    
     margin-bottom: 20rem;
 }
 
