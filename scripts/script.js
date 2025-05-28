@@ -3,7 +3,7 @@
 
 
 
-fetch('../content/index-content.json')
+fetch('/content/index-content.json')
     .then(response => response.json())
     .then(data => {
         // hero
