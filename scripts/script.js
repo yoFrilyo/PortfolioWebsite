@@ -3,8 +3,8 @@
 
 
 
-fetch('/content/index-content.json')
-    .then(response => response.json())
+fetch('content/index-content.json')
+    .then(res => res.json())
     .then(data => {
         // hero
         document.getElementById('hero-helper').innerHTML = data.hero.helper
