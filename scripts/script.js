@@ -55,25 +55,37 @@ fetch('../content/index-content.json')
 
 
 
-const sections = document.querySelectorAll("section");
-const navLinks = document.querySelectorAll(".nav-direct");
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".nav-direct");
 
-window.addEventListener("scroll", () => {
-    let current = "";
+    window.addEventListener("scroll", () => {
+        let current = "";
 
-    sections.forEach((section) => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
 
-        if (scrollY >= sectionTop - sectionHeight / 3) {
-            current = section.getAttribute("id");
-        }
-    });
+            if (scrollY >= sectionTop - sectionHeight / 3) {
+                current = section.getAttribute("id");
+            }
+        });
 
-    navLinks.forEach((link) => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === `#${current}`) {
-            link.classList.add("active");
-        }
-    });
+        navLinks.forEach((link) => {
+            link.classList.remove("active");
+            if (link.getAttribute("href") === `#${current}`) {
+                link.classList.add("active");
+            }
+        });
 });
+
+
+
+
+    function adjustHomeHeight()
+    {
+        const navHeight = document.querySelector('.flex-container-spread-row').offsetHeight;
+        document.querySelector('.home').style.minHeight = `calc(100vh - ${navHeight}px)`;
+    }
+
+    window.addEventListener('DOMContentLoaded', adjustHomeHeight);
+    window.addEventListener('resize', adjustHomeHeight);

@@ -6,7 +6,8 @@ Frilyo
 
 
 html {
-    scroll-behavior: smooth;}
+    scroll-behavior: smooth;
+}
 
 @font-face{
     font-family: 'Abel';
@@ -21,8 +22,9 @@ html {
 }
 
 body {
-    padding-left: 15rem;
-    padding-right: 15rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4rem;
     font-family: 'Abel', sans-serif;
     background-color: #1F2133;
     color: white;
@@ -37,6 +39,20 @@ hr {
     border-radius: 2px;
     border: none;
     background-color: #EAD279;
+}
+
+
+
+.scalable {
+    transform: scale(1);
+    transform-origin: center;
+    /* position: relative; */
+}
+
+.scalable-sticky {
+    transform: scale(1);
+    transform-origin: bottom;
+    
 }
 
 
@@ -70,17 +86,41 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5rem;
-    min-height: calc(100vh - 6rem);
+    /* height: calc(100vh - 6rem); */
 }
 
 
 
 .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    column-gap: 4rem;
+}
+
+.A1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.A2 {
     display: flex;
-    flex-direction: row;
-    justify-content: top;
-    gap: 25rem;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.B1 {
+    display: flex;
+    align-items: flex-end;
+    grid-column: 2;
+    grid-row: 1;
+    margin-bottom: 3rem;
+}
+
+.B2 {
+    display: flex;
+    grid-column: 2;
+    grid-row: 2;
 }
 
 
@@ -98,7 +138,7 @@ hr {
 
 
 .description {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 
@@ -220,6 +260,107 @@ nav {
 }
 
 .footer-text {
-    margin: 3rem;
-    font-size: 1.25rem;
+    margin: 2rem;
+    font-size: 1rem;
 }
+
+
+
+
+
+
+/* @media (max-width: 1500px){
+    .scalable {
+        transform: scale(0.7);
+    }
+
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+
+    hero-helper {
+        font-size: 1.5rem;
+    }
+
+
+
+    .description {
+        font-size: 1rem;
+    }
+
+
+
+    .name {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #EAD279;
+    }
+
+
+
+    nav {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+
+        font-size: 2rem;
+        color: #EAD279;
+        background-color: #1F2133;
+    }
+
+
+
+    .project-title {
+        font-size: 4rem;
+        color: #EAD279;
+    }
+
+    .project-date {
+        font-size: 2rem;
+    }
+
+
+
+    .footer-text {
+        margin: 0.5rem;
+        font-size: 0.5rem;
+    }
+
+
+
+    .rounded-image {
+        border-radius: 2rem;
+    }
+
+    .headshot-image {
+        width: 48vh;
+        height: 48vh;
+    }
+
+    .project-image {
+        width: 300px;
+        height: 250px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 720px){
+    scalable {
+        transform: scale(0.1);
+    }
+}
+
+
+
+
+
+
+@media (max-width: 480px){
+    
+} */
