@@ -5,8 +5,7 @@
         "image": "../Images/HeadshotPlaceholder.jpg"
     },
     "about": {
-        "title": "Welcom to my website!",
-        "text": "I created this website in VSCode to showcases projects I have designed, developed, or contributed to over the years. Whether it's an Android app, a full-stack website, or a set of low-level memory management functions in assembly, each project represents a step in my growth as a developer. I enjoy working on all levels accross the stack, and I'm always exploring new languages, paradigms, and problem solving techniques. From low-level systems to high level designs, I enjoy building solutions from the ground up.\n\nFeel free to explore my work and reach out if you'd like to connect!\n\nThanks for visiting!"
+        "text": "Welcome to my website!\n\nI created this website in VSCode to showcases projects I have designed, developed, or contributed to over the years. Whether it's an Android app, a full-stack website, or a set of low-level memory management functions in assembly, each project represents a step in my growth as a developer. I enjoy working on all levels accross the stack, and I'm always exploring new languages, paradigms, and problem solving techniques. From low-level systems to high-level designs, I enjoy building solutions from the ground up.\n\nFeel free to explore my work and reach out if you'd like to connect!\n\nThanks for visiting!"
     },
     "portfolio":  [
         {"name": "Noise Nest", "date": "Current Project", "image": "#", "link": "https://github.com/yoFrilyo/NoiseNest", "desc": "A soundboard for linux enabling users to bind custom hotkeys to play sound files through a microphone output. Saves users created configurations using TinyXML and loads them at the application start."},
