@@ -159,7 +159,7 @@ hr {
 
     .description {
         flex: 2;
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 }
 
@@ -241,7 +241,7 @@ nav {
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin-bottom: 20rem;
+    margin-bottom: 14rem;
 }
 
 .project-left {
