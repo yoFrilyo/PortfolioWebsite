@@ -80,12 +80,35 @@ fetch('content/index-content.json')
 
 
 
+function adjustHomeHeight()
+{
+    const navHeight = document.querySelector('.flex-container-spread-row').offsetHeight;
+    document.querySelector('.home').style.minHeight = `calc(100vh - ${navHeight}px)`;
+}
 
-    function adjustHomeHeight()
-    {
-        const navHeight = document.querySelector('.flex-container-spread-row').offsetHeight;
-        document.querySelector('.home').style.minHeight = `calc(100vh - ${navHeight}px)`;
+window.addEventListener('DOMContentLoaded', adjustHomeHeight);
+window.addEventListener('resize', adjustHomeHeight);
+
+
+
+const modal = document.getElementById("contactModal");
+const link = document.getElementById("contactLink");
+const close = document.querySelector(".close");
+
+link.onclick = (event) => {
+    event.preventDefault();
+    modal.style.display = "block";
+    document.body.classList.add("modal-open");
+};
+
+close.onclick = () => {
+    modal.style.display = "none";
+    document.body.classList.remove("modal-open")
+};
+
+window.onclick = (event) => {
+    if (event.target === modal) {
+        modal.style.display = "none";
+        document.body.classList.remove("modal-open");
     }
-
-    window.addEventListener('DOMContentLoaded', adjustHomeHeight);
-    window.addEventListener('resize', adjustHomeHeight);
+};

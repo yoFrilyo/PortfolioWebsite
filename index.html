@@ -29,7 +29,7 @@ Frilyo
                     <a href="#home" class="nav-direct hoverable active">About</a>
                     <a href="#portfolio" class="nav-direct hoverable">Projects</a>
                     <a href="Images/Owen-Gallegos-Resume-v1.2.pdf" class="nav-direct hoverable" target="_blank" rel="noopener noreferrer">Résumé</a>
-                    <a href="mailto:owengallegos23@gmail.com" class="nav-direct hoverable">Contact</a>
+                    <a class="nav-direct hoverable" id="contactLink">Contact</button>
                 </div>
                 <div class="links scalable">
                     <a href="https://github.com/yoFrilyo" target="_blank" rel="noopener noreferrer" class="link-icon">
@@ -42,6 +42,21 @@ Frilyo
             </div>
             <hr>
         </nav>
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 class="modal-header"> Contact Me</h2>
+                <form action="https://formsubmit.co/owengallegos23@gmail.com" method="POST">
+                    <p class="input-header">Email</p>
+                    <input type="email" name="email" placeholder="Your email" required><br><br>
+                    <p class="input-header">Message</p>
+                    <textarea name="message" placeholder="Your message" rows="8" required></textarea><br><br>
+                    <!-- <input type="hidden" name="_captcha" value="false"> -->
+                    <input type="hidden" name="_next" value="https://yofrilyo.github.io/PortfolioWebsite/"> <!-- value="/thankyou" -->
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
         <section class="portfolio scalable" id="portfolio">
             <div class="spacer-vertical-20rem"></div>
             <div class="project-list" id="project-list"></div>
