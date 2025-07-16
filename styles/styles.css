@@ -22,6 +22,7 @@ html {
 }
 
 body {
+    width: 70vw;
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 4rem;
@@ -102,22 +103,22 @@ hr {
 }
 
 .hero-title {
-    font-size: 5rem;
+    font-size: 4rem;
     font-weight: bold;
     padding: 5rem;
 }
 
 .hero-helper {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .description {
     flex: 1;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .name {
-    font-size: 7rem;
+    font-size: 6.5rem;
     font-weight: bold;
     color: #EAD279;
 }
@@ -134,14 +135,13 @@ hr {
 
     .headshot-image {
         display: block;
-        width: fit-content;
+        width: auto;
         height: auto;
         justify-content: center;
     }
 
     .description {
         flex: 2;
-        font-size: 1.7rem;
     }
 }
 
