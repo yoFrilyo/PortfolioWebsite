@@ -82,7 +82,7 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 5rem;
+    gap: clamp(2rem, 5vh, 5rem);
     /* min-height: calc(100vh - 6rem); */
 }
 
@@ -93,7 +93,7 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: top;
-    gap: 5rem;
+    gap: clamp(2rem, 5vw, 5rem);
 }
 
 .headshot-image {
@@ -103,22 +103,21 @@ hr {
 }
 
 .hero-title {
-    font-size: 4rem;
     font-weight: bold;
     padding: 5rem;
 }
 
 .hero-helper {
-    font-size: 2rem;
+    font-size: clamp(1rem, 4vh, 2rem);
 }
 
 .description {
     flex: 1;
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 2.5vh, 1.5rem);
 }
 
 .name {
-    font-size: 6.5rem;
+    font-size: clamp(3rem, 8vh, 6.5rem);
     font-weight: bold;
     color: #EAD279;
 }
@@ -168,8 +167,8 @@ hr {
 
 
 
-.spacer-vertical-20rem {
-    height: 20rem;
+.spacer-vertical {
+    height: clamp(5rem, 10vh, 12rem);
 }
 
 
@@ -179,13 +178,13 @@ nav {
     top: 0;
     z-index: 10;
 
-    font-size: 2rem;
+    font-size: clamp(1rem, 3vw, 2rem);
     color: #EAD279;
     background-color: #1F2133;
 }
 
 .nav-direct {
-    margin-right: 5.6rem;
+    margin-right: clamp(2rem, 4vw, 5.6rem);
 }
 
 .nav-direct.active {
@@ -195,7 +194,7 @@ nav {
 
 .nav-link {
     text-align: right;
-    margin-left: 2rem;
+    margin-left: clamp(1rem, 2vw, 2rem);
 }
 
 .links {
@@ -213,8 +212,8 @@ nav {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding-top: 2.5rem;
-    padding-bottom: 1rem;
+    padding-top: clamp(1rem, 3vh, 2rem);
+    padding-bottom: clamp(0.5rem, 3vh, 1rem);
 }
 
 
@@ -291,7 +290,7 @@ body.modal-open {
     display: flex;
     flex-direction: row;
     list-style: none;
-    margin-bottom: 14rem;
+    margin-bottom: clamp(5rem, 10vh, 12rem);
 }
 
 .project-left {
@@ -304,12 +303,12 @@ body.modal-open {
 }
 
 .project-title {
-    font-size: 4rem;
+    font-size: clamp(2rem, 6vh, 4rem);
     color: #EAD279;
 }
 
 .project-date {
-    font-size: 2rem;
+    font-size: clamp(1rem, 3vh, 2rem);
 }
 
 .project-image {
@@ -325,5 +324,5 @@ body.modal-open {
 
 .footer-text {
     margin: 2rem;
-    font-size: 1rem;
+    font-size: clamp(0.5rem, 2vh, 1rem);
 }
