@@ -230,20 +230,21 @@ nav {
 }
 .modal-content {
     background-color: #1F2133;
-    margin: 10% auto;
+    width: 70vw;
+    max-width: 600px;
+    margin: 5% auto;
     padding: 20px;
-    width: 20%;
-    max-width: 80vw;
     border-radius: 2rem;
 }
 .modal-header {
+    font-size: clamp(2rem, 2vw, 4rem);
     text-align: center;
     font-weight: bolder;
     color: #EAD279;
 }
 .close {
     float: right;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: bold;
     cursor: pointer;
 }
@@ -252,7 +253,7 @@ nav {
 }
 .modal-content .input-header {
     margin-top: 1rem;
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 3.5vw, 2rem);
     font-weight: bold;
 }
 .modal-content textarea, .modal-content input {
@@ -261,7 +262,7 @@ nav {
     background-color: #1F2133;
     color: white;
     width: 90%;
-    font-size: 1.2rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     border: 2px solid white;
     border-radius: 2rem;
     resize: none;
